@@ -1,6 +1,6 @@
 ---
 title: "Problem set 4"
-author: "Your name here"
+author: "Jonathon Cummock"
 date: "`r Sys.Date()`"
 ---
 
@@ -47,6 +47,10 @@ your trackline should look something like this (all on one line):
 
 ```
 track type=bedGraph bigDataUrl="http://<username>.github.io/<repo name>/path/to/bw color=255,0,0 visiblity=full name='chip data' description='chip description'
+
+My submitted track to UCSC: track type=bigWig bigDataUrl="http://jonnycummock.github.io/problem-set-4/data/factorx.bw" color=255,0,0 visibility=full name='factorx chipseq' description='cummock ps4 track'
+
+UCSC link: http://tinyurl.com/hqe93cz
 ```
 
 ### Peak calling
@@ -77,3 +81,34 @@ meme-get-motif -id 1 < meme.txt
 ```
 
 Copy the numeric matrix into the the search box on the tomtom site and report which motif it matches.
+
+
+	Motif 1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 20 nsites= 864 E= 1.2e-540 
+ 0.123843  0.306713  0.318287  0.251157 
+ 0.144676  0.315972  0.228009  0.311343 
+ 0.185185  0.077546  0.556713  0.180556 
+ 0.094907  0.787037  0.055556  0.062500 
+ 0.000000  0.996528  0.000000  0.003472 
+ 0.545139  0.287037  0.040509  0.127315 
+ 0.028935  0.601852  0.195602  0.173611 
+ 0.078704  0.703704  0.034722  0.182870 
+ 0.479167  0.011574  0.041667  0.467593 
+ 0.181713  0.027778  0.710648  0.079861 
+ 0.195602  0.209491  0.562500  0.032407 
+ 0.143519  0.017361  0.296296  0.542824 
+ 0.008102  0.000000  0.983796  0.008102 
+ 0.032407  0.055556  0.806713  0.105324 
+ 0.155093  0.564815  0.086806  0.193287 
+ 0.346065  0.208333  0.302083  0.143519 
+ 0.225694  0.353009  0.285880  0.135417 
+ 0.229167  0.276620  0.172454  0.321759 
+ 0.332176  0.194444  0.284722  0.188657 
+ 0.221065  0.193287  0.306713  0.278935
+ 
+ 
+ ### TomTom results
+ Using 1000 random sites, tomtom identified a motif that matched CTCF (MA0139.1) with a p-value of	7.36e-11 using the JASPAR CORE 2014 vertebrates database. There are 19 additional matches including: CTCF_full, Hic1_DBD_1, MA0461.1 (Atoh1), UP00123_1 (Hlxb9_3422.1), MA0154.2 (EBF1), and MA0155.1 (INSM1).
+ 
+CTCF logo.png file in data folder
